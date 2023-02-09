@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  const urlData = location.protocol + location.host + "/";
+  //const urlData = location.protocol + location.host + "/";
 
   const generatePicture = (data) => {
     const { name, path, marque, annee, type, etat, description } = data;
@@ -30,7 +30,6 @@ $(document).ready(() => {
     $(figcaption).appendTo(figure);
     return figure;
   };
-  //Description
 
   $("#show").on("click", function (e) {
     fetch("/data/data.json")
