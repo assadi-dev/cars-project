@@ -6,7 +6,12 @@ $(document).ready(() => {
     let figure = document.createElement("figure");
     let img = document.createElement("img");
     let figcaption = document.createElement("figcaption");
-    let textMarque = document.createElement("p");
+    $(figcaption).addClass("card-content");
+    let textMarque = document.createElement("h2");
+    let cardImage = document.createElement("div");
+    $(cardImage).addClass("card-image");
+    $(figure).addClass("card white rounded-2 shadow-1 mx-auto");
+
     $(textMarque).text(marque);
     $(textMarque).appendTo(figcaption);
     let textannee = document.createElement("p");
@@ -26,7 +31,8 @@ $(document).ready(() => {
       src: path,
       alt: name,
     });
-    $(img).prependTo(figure);
+    $(img).appendTo(cardImage);
+    $(cardImage).prependTo(figure);
     $(figcaption).appendTo(figure);
     return figure;
   };
@@ -39,6 +45,7 @@ $(document).ready(() => {
           let li = document.createElement("li");
           let img = generatePicture(data);
           $(img).appendTo(li);
+
           $(li).appendTo("#car-list");
         });
       });

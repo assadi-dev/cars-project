@@ -5,17 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@2.2.1/dist/axentix.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Cars list</title>
 </head>
 
 <body>
     <main>
-        <button id="show">Voir</button>
-        <ul id="car-list"></ul>
+        <nav class="navbar shadow-1 primary">
+            <a href="/" class="navbar-brand">Cars List</a>
+
+        </nav>
+        <header>
+            <h1>List des voitures</h1>
+            <button data-waves id="show" class="btn shadow-1 rounded-1 blue btn-large ">Voir</button>
+
+        </header>
+        <section>
+            <ul id="car-list"></ul>
+        </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axentix@2.2.1/dist/axentix.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

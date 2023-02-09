@@ -28,6 +28,7 @@ li {
 a {
     color: inherit;
     text-decoration: none;
+    font-size: inherit !important;
 }
 
 body {
@@ -46,4 +47,53 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.btn,
+.navbar-brand {
+    font-size: 2rem !important;
+}
+
+
+/*Theme */
+
+section {
+    padding: 15px;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+section button {
+    width: 100%!important;
+}
+
+.card {
+    width: 100%;
+}
+
+.card .card-content p {
+    margin: 1.5rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3)
+}
+
+#car-list li {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+@media screen and (min-width:550px) {
+    .card {
+        max-width: 400px;
+    }
+    section button {
+        width: initial!important;
+    }
 }
