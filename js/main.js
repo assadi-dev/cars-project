@@ -1,4 +1,6 @@
 $(document).ready(() => {
+  const urlData = location.protocol + location.host + "/";
+
   const generatePicture = (src, alt) => {
     let figure = document.createElement("figure");
     let img = document.createElement("img");
@@ -11,7 +13,7 @@ $(document).ready(() => {
   };
 
   $("#show").on("click", function (e) {
-    fetch("/../data/data.json")
+    fetch("data/data.json")
       .then((res) => res.json())
       .then((res) => {
         res.map((data) => {
