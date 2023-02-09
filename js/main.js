@@ -35,11 +35,10 @@ $(document).ready(() => {
     fetch("/data/data.json")
       .then((res) => res.json())
       .then((res) => {
-        res.map((data) => {
+        res.voitures.map((data) => {
           let li = document.createElement("li");
           let img = generatePicture(data);
           $(img).appendTo(li);
-
           $(li).appendTo("#car-list");
         });
       });

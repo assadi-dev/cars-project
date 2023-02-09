@@ -1,32 +1,34 @@
-[
-    {
-        "id": 1,
-        "name": "1950-500.jpg",
-        "path": "/../asset/1950-500.jpg",
-        "marque": "Fiat",
-        "annee": "1960",
-        "type": "Utilitaire",
-        "etat": "Ancien",
-        "description": "Utilisée souvent dans les films anciens comme La dolce vita"
-    },
-    {
-        "id": 2,
-        "name": "ford.jpg",
-        "path": "/../asset/ford.jpg",
-        "marque": "Ford-Mustang",
-        "annee": "1977",
-        "type": "Sport",
-        "etat": "Ancien",
-        "description": "Utilisée dans des films d'action américain"
-    },
-    {
-        "id": 3,
-        "name": "delorean.jpg",
-        "path": "/../asset/delorean.jpg",
-        "marque": "DeLorean",
-        "annee": "1982",
-        "type": "Sport",
-        "etat": "Ancien",
-        "description": "Retour vers le futur : DeLorean, une histoire nord-irlandaise"
-    }
-]
+{
+    "voitures": [
+        {
+            "id": 1,
+            "name": "1950-500.jpg",
+            "path": "/../asset/1950-500.jpg",
+            "marque": "Fiat",
+            "annee": "1960",
+            "type": "Utilitaire",
+            "etat": "Ancien",
+            "description": "Utilisée souvent dans les films anciens comme La dolce vita"
+        },
+        {
+            "id": 2,
+            "name": "ford.jpg",
+            "path": "/../asset/ford.jpg",
+            "marque": "Ford-Mustang",
+            "annee": "1977",
+            "type": "Sport",
+            "etat": "Ancien",
+            "description": "Utilisée dans des films d'action américain"
+        },
+        {
+            "id": 3,
+            "name": "delorean.jpg",
+            "path": "/../asset/delorean.jpg",
+            "marque": "DeLorean",
+            "annee": "1982",
+            "type": "Sport",
+            "etat": "Ancien",
+            "description": "Retour vers le futur : DeLorean, une histoire nord-irlandaise"
+        }
+    ]
+}
