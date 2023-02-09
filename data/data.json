@@ -2,16 +2,16 @@
     {
         "id": 1,
         "name": "1950-500.jpg",
-        "path": "../asset/1950-500.jpg"
+        "path": "/../asset/1950-500.jpg"
     },
     {
         "id": 2,
         "name": "delorean.jpg",
-        "path": "../asset/delorean.jpg"
+        "path": "/../asset/delorean.jpg"
     },
     {
         "id": 3,
         "name": "ford.jpg",
-        "path": "../asset/ford.jpg"
+        "path": "/../asset/ford.jpg"
     }
 ]
