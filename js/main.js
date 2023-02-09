@@ -13,7 +13,7 @@ $(document).ready(() => {
   };
 
   $("#show").on("click", function (e) {
-    fetch("data/data.json")
+    fetch("/data/data.json")
       .then((res) => res.json())
       .then((res) => {
         res.map((data) => {
