@@ -63,6 +63,7 @@ section {
 
 header {
     text-align: center;
+    padding: 12px;
 }
 
 header h1 {
@@ -70,7 +71,7 @@ header h1 {
     margin: 2rem;
 }
 
-section button {
+header button {
     width: 100%!important;
 }
 
@@ -87,13 +88,14 @@ section button {
 #car-list li {
     margin: 2rem 0;
     width: 100%;
+    line-height: 2rem !important;
 }
 
 @media screen and (min-width:550px) {
     .card {
         max-width: 400px;
     }
-    section button {
+    header button {
         width: initial!important;
     }
 }
