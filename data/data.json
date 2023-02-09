@@ -7,7 +7,7 @@
         "annee": "1960",
         "type": "Utilitaire",
         "etat": "Ancien",
-        "description": "Utilis\u00e9e souvent dans les films anciens comme \"La dolce vita\""
+        "description": "Utilisée souvent dans les films anciens comme La dolce vita"
     },
     {
         "id": 2,
@@ -17,7 +17,7 @@
         "annee": "1977",
         "type": "Sport",
         "etat": "Ancien",
-        "description": "Utilis\u00e9e dans des films d'action am\u00e9ricain"
+        "description": "Utilisée dans des films d'action américain"
     },
     {
         "id": 3,
@@ -27,6 +27,6 @@
         "annee": "1982",
         "type": "Sport",
         "etat": "Ancien",
-        "description": "\"Retour vers le futur\" : DeLorean, une histoire nord-irlandaise "
+        "description": "Retour vers le futur : DeLorean, une histoire nord-irlandaise"
     }
 ]
