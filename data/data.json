@@ -2,16 +2,31 @@
     {
         "id": 1,
         "name": "1950-500.jpg",
-        "path": "/../asset/1950-500.jpg"
+        "path": "/../asset/1950-500.jpg",
+        "marque": "Fiat",
+        "annee": "1960",
+        "type": "Utilitaire",
+        "etat": "Ancien",
+        "description": "Utilis\u00e9e souvent dans les films anciens comme \"La dolce vita\""
     },
     {
         "id": 2,
-        "name": "delorean.jpg",
-        "path": "/../asset/delorean.jpg"
+        "name": "ford.jpg",
+        "path": "/../asset/ford.jpg",
+        "marque": "Ford-Mustang",
+        "annee": "1977",
+        "type": "Sport",
+        "etat": "Ancien",
+        "description": "Utilis\u00e9e dans des films d'action am\u00e9ricain"
     },
     {
         "id": 3,
-        "name": "ford.jpg",
-        "path": "/../asset/ford.jpg"
+        "name": "delorean.jpg",
+        "path": "/../asset/delorean.jpg",
+        "marque": "DeLorean",
+        "annee": "1982",
+        "type": "Sport",
+        "etat": "Ancien",
+        "description": "\"Retour vers le futur\" : DeLorean, une histoire nord-irlandaise "
     }
 ]
