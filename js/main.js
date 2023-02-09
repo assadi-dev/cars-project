@@ -45,7 +45,6 @@ $(document).ready(() => {
           let li = document.createElement("li");
           let img = generatePicture(data);
           $(img).appendTo(li);
-
           $(li).appendTo("#car-list");
         });
       });
