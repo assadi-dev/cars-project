@@ -21,5 +21,8 @@ $(document).ready(() => {
           $(li).appendTo("#car-list");
         });
       });
+    $(this).attr({
+      disabled: true,
+    });
   });
 });
