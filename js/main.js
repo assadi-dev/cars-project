@@ -7,7 +7,7 @@ $(document).ready(() => {
     let img = document.createElement("img");
     let figcaption = document.createElement("figcaption");
     let textMarque = document.createElement("p");
-    textMarque.textContent = marque;
+    $(textMarque).text(marque);
     $(textMarque).appendTo(figcaption);
     let textannee = document.createElement("p");
     $(textannee).text(annee);
