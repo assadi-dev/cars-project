@@ -1,5 +1,6 @@
 $(document).ready(() => {
   //const urlData = location.protocol + location.host + "/";
+  const currentDate = new Date().getFullYear();
 
   const generatePicture = (data, index) => {
     const { name, path, marque, annee, type, etat, description } = data;
@@ -47,5 +48,14 @@ $(document).ready(() => {
     $(this).attr({
       disabled: true,
     });
+  });
+
+  //Footer
+
+  $("footer").html(`<p>&copy; - JS - ${currentDate}</p>`);
+
+  $("footer p").wrapInner("<time></time>");
+  $("time").attr({
+    datetime: `${currentDate}`,
   });
 });

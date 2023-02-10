@@ -86,6 +86,14 @@ header button {
     width: 75vw;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1.8rem 0;
+}
+
 .card-image img {
     display: inline-block !important;
     max-height: 350px;
