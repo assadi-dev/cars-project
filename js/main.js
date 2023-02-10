@@ -34,7 +34,9 @@ $(document).ready(() => {
     $(img).appendTo(cardImage);
     $(cardImage).prependTo(figure);
     $(figcaption).appendTo(figure);
-    $(figure).css({ "animation-delay": `${(index + 1) * 150}ms` });
+    $(figure)
+      .addClass("hidden")
+      .css({ "animation-delay": `${(index + 1) * 150}ms` });
     return figure;
   };
 
