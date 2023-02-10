@@ -1,7 +1,7 @@
 $(document).ready(() => {
   //const urlData = location.protocol + location.host + "/";
 
-  const generatePicture = (data) => {
+  const generatePicture = (data, index) => {
     const { name, path, marque, annee, type, etat, description } = data;
     let figure = document.createElement("figure");
     let img = document.createElement("img");
@@ -34,6 +34,7 @@ $(document).ready(() => {
     $(img).appendTo(cardImage);
     $(cardImage).prependTo(figure);
     $(figcaption).appendTo(figure);
+    $(figure).css({ "animation-delay": `${(index + 1) * 150}ms` });
     return figure;
   };
 
@@ -41,10 +42,11 @@ $(document).ready(() => {
     fetch("/data/data.json")
       .then((res) => res.json())
       .then((res) => {
-        res.voitures.map((data) => {
+        res.voitures.map((data, i) => {
           let li = document.createElement("li");
-          let img = generatePicture(data);
-          $(img).appendTo(li);
+          let card = generatePicture(data, i);
+          $(card).appendTo(li);
+          $(card).addClass("apparition");
           $(li).appendTo("#car-list");
         });
       });

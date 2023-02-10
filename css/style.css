@@ -79,10 +79,26 @@ header button {
     width: 100%;
 }
 
+.card-image img {
+    display: inline-block !important;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
 .card .card-content p {
     margin: 1.5rem 0;
     padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    max-height: fit-content;
+}
+
+#car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 420px);
+    justify-content: center;
+    max-width: 100%;
+    margin: 2rem auto;
 }
 
 #car-list li {
@@ -91,11 +107,39 @@ header button {
     line-height: 2rem !important;
 }
 
+.hidden {
+    opacity: 0;
+    transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.apparition {
+    animation: 0.35s fadeIn ease-in-out forwards;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    -webkit-animation: 0.35s fadeIn ease-in-out forwards;
+}
+
 @media screen and (min-width:550px) {
     .card {
         max-width: 400px;
     }
     header button {
         width: initial!important;
+    }
+    #car-list {
+        max-width: 75vw;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
     }
 }
