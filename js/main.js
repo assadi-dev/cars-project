@@ -7,25 +7,17 @@ $(document).ready(() => {
     let img = document.createElement("img");
     let figcaption = document.createElement("figcaption");
     $(figcaption).addClass("card-content");
-    let textMarque = document.createElement("h2");
     let cardImage = document.createElement("div");
     $(cardImage).addClass("card-image");
     $(figure).addClass("card white rounded-2 shadow-1 mx-auto");
 
-    $(textMarque).text(marque);
-    $(textMarque).appendTo(figcaption);
-    let textannee = document.createElement("p");
-    $(textannee).text(annee);
-    $(textannee).appendTo(figcaption);
-    let textype = document.createElement("p");
-    $(textype).text(type);
-    $(textype).appendTo(figcaption);
-    let textetat = document.createElement("p");
-    $(textetat).text(etat);
-    $(textetat).appendTo(figcaption);
-    let textDescription = document.createElement("p");
-    $(textDescription).text(description);
-    $(textDescription).appendTo(figcaption);
+    $(figcaption).append(`<h2>${marque}</h2>`);
+    $(figcaption).append(`<p><strong>Année: </strong> ${annee}</p>`);
+    $(figcaption).append(`<p><strong>Type: </strong> ${type}</p>`);
+    $(figcaption).append(`<p><strong>Etat: </strong> ${etat}</p>`);
+    $(figcaption).append(
+      `<p><strong>Description: </strong> ${description}</p>`
+    );
 
     $(img).attr({
       src: path,
